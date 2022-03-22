@@ -1,0 +1,10 @@
+{
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "packages": [
+    "packages/ds-react",
+    "packages/ds-styles",
+    "packages/ds-react"
+  ],
+  "version": "independent"
+}

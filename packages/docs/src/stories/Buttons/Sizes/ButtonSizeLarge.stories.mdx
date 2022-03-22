@@ -1,0 +1,47 @@
+import { Meta, Story, Canvas, Props, ArgsTable } from '@storybook/addon-docs';
+
+import { Button, ButtonProps } from 'ds-react'
+
+<Meta
+  title="Components/Button/Size/Large"
+  component={Button}
+  parameters={{
+    viewMode: 'docs'
+  }}
+/>
+
+export const Template = args => <Button {...args} />
+
+# Botão size Small
+
+<Canvas>
+  <Story
+    name="Large Text"
+    args={{
+      children: 'Large Text',
+      size: 'large'
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <Story
+    name="Large Contained"
+    args={{
+      children: 'Large Contained',
+      variant: 'contained',
+      size: 'large'
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <Story
+    name="Large Outlined"
+    args={{
+      children: 'Large Outlined',
+      variant: 'outlined',
+      size: 'large'
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>

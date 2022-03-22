@@ -1,0 +1,51 @@
+{
+  "name": "ds-react",
+  "version": "0.0.0",
+  "author": "Lucas Eduardo <leduardo.santos.1997@gmail.com>",
+  "license": "ISC",
+  "source": "src/index.ts",
+  "types": "lib/index.d.ts",
+  "typings": "lib/index.d.ts",
+  "main": "lib/index.cjs.js",
+  "module": "lib/index.es.js",
+  "files": [
+    "lib"
+  ],
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "rollup -c -w",
+    "compile": "rollup -c"
+  },
+  "dependencies": {
+    "@radix-ui/react-dialog": "^0.1.6",
+    "@stitches/react": "^1.2.7",
+    "ds-styles": "^0.0.0",
+    "ds-tokens": "^0.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.7",
+    "@typescript-eslint/eslint-plugin": "^5.14.0",
+    "@typescript-eslint/parser": "^5.14.0",
+    "babel-loader": "^8.2.3",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-import-helpers": "^1.2.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "eslint-plugin-react": "^7.29.4",
+    "prettier": "^2.5.1"
+  },
+  "peerDependencies": {
+    "@radix-ui/react-dialog": "^0.1.6",
+    "@stitches/react": "^1.2.7",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}

@@ -1,0 +1,47 @@
+import { Meta, Story, Canvas, Props, ArgsTable } from '@storybook/addon-docs';
+
+import { Button, ButtonProps } from 'ds-react'
+
+<Meta
+  title="Components/Button/Variants/Contained"
+  component={Button}
+  parameters={{
+    viewMode: 'docs'
+  }}
+/>
+
+export const Template = args => <Button {...args} />
+
+# Botão variante Contained
+
+<Canvas>
+  <Story
+    name="Contained Primary"
+    args={{
+      children: 'Primary',
+      variant: 'contained'
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <Story
+    name="Contained Disabled"
+    args={{
+      children: 'Disabled',
+      variant: 'contained',
+      disabled: true
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <Story
+    name="Contained Link"
+    args={{
+      children: 'Link',
+      as: 'link',
+      variant: 'contained'
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>

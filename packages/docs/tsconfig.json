@@ -1,0 +1,17 @@
+{
+  "include": [
+    "src/**/*.tsx"
+  ],
+  "exclude": [
+    "dist",
+    "node_modules"
+  ],
+  "compilerOptions": {
+    "target": "ESNext",
+    "outDir": "dist",
+    "declaration": true,
+    "declarationDir": ".",
+    "moduleResolution": "Node",
+    "jsx": "react-jsx"
+  }
+}

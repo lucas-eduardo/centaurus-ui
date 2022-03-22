@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "diagnostics": true,
+    "extendedDiagnostics": true,
+    "baseUrl": "./src",
+    "declaration": true,
+    "declarationDir": "lib",
+    "esModuleInterop": false,
+    "forceConsistentCasingInFileNames": true,
+    "lib": [
+      "ES6",
+      "ES7",
+      "ES2017"
+    ],
+    "moduleResolution": "Node",
+    "rootDir": "./src",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "target": "ESNext",
+    "jsx": "preserve"
+  },
+  "files": [
+    "src/index.ts"
+  ],
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "lib",
+    "node_modules"
+  ]
+}

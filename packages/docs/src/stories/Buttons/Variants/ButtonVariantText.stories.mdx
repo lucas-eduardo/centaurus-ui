@@ -1,0 +1,47 @@
+import { Meta, Story, Canvas, Props, ArgsTable } from '@storybook/addon-docs';
+
+import { Button, ButtonProps } from 'ds-react'
+
+<Meta
+  title="Components/Button/Variants/Text"
+  component={Button}
+  parameters={{
+    viewMode: 'docs'
+  }}
+/>
+
+export const Template = args => <Button {...args} />
+
+# Botão variante Text
+
+<Canvas>
+  <Story
+    name="Text Primary"
+    args={{
+      children: 'Primary',
+      variant: 'text'
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <Story
+    name="Text Disabled"
+    args={{
+      children: 'Disabled',
+      variant: 'text',
+      disabled: true
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <Story
+    name="Text Link"
+    args={{
+      children: 'Link',
+      as: 'link',
+      variant: 'text'
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
